@@ -1,6 +1,6 @@
 # clj-esendex-demo
 [![Build Status](https://snap-ci.com/andy-c-jones/clj-esendex-demo/branch/master/build_image)](https://snap-ci.com/andy-c-jones/clj-esendex-demo/branch/master)
-
+[The demo is automatically deployed on build to heroku!](http://clj-esendex-demo.herokuapp.com/)
 
 A demo application that makes use of the clj-esendex library.
 
