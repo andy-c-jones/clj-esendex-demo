@@ -8,6 +8,7 @@
             [ring.middleware.defaults :refer [site-defaults wrap-defaults]]
             [ring.middleware.anti-forgery :refer [wrap-anti-forgery]]
             [ring.middleware.format :refer [wrap-restful-format]]
+            [ring.middleware.params :refer [wrap-params]]
             [clj-esendex-demo.config :refer [defaults]])
   (:import [javax.servlet ServletContext]))
 
@@ -57,5 +58,6 @@
         (-> site-defaults
             (assoc-in [:security :anti-forgery] false)
             (dissoc :session)))
+      wrap-params
       wrap-context
       wrap-internal-error))

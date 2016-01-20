@@ -1,7 +1,7 @@
 (defproject clj-esendex-demo "0.1.0-SNAPSHOT"
 
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
+  :description "An example of using the clj-esendex library"
+  :url "https://github.com/andy-c-jones/clj-esendex-demo"
 
   :dependencies [[org.clojure/clojure "1.7.0"]
                  [selmer "1.0.0"]
@@ -23,7 +23,8 @@
                  [mount "0.1.8"]
                  [luminus-nrepl "0.1.2"]
                  [org.webjars/webjars-locator-jboss-vfs "0.1.0"]
-                 [luminus-immutant "0.1.0"]]
+                 [luminus-immutant "0.1.0"]
+                 [clj-esendex "0.1.1-SNAPSHOT"]]
 
   :min-lein-version "2.0.0"
   :uberjar-name "clj-esendex-demo.jar"
@@ -44,8 +45,6 @@
                                  [ring/ring-mock "0.3.0"]
                                  [ring/ring-devel "1.4.0"]
                                  [pjstadig/humane-test-output "0.7.1"]]
-                  
-                  
                   :source-paths ["env/dev/clj"]
                   :repl-options {:init-ns clj-esendex-demo.core}
                   :injections [(require 'pjstadig.humane-test-output)
