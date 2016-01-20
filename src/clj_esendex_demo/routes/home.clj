@@ -14,7 +14,6 @@
 (defroutes home-routes
   (GET "/" [] (home-page))
   (POST "/Send" req
-    (log/info (:params req))
     (let [params (:params req)
           dispatch (client/sms-dispatcher (:username params) (:password params))]
       (-> (client/sms-xml (:account params) (:to params) (:body params))
